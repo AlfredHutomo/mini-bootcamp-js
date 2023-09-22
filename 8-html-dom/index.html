@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- CSS framework di dalam project ini https://tailwindcss.com -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="p-2 grid place-items-center w-full h-screen bg-gradient-to-r from-cyan-200 via-cyan-500 to-cyan-800"
+  >
+    <section class="bg-white rounded p-4 w-1/2">
+      <h3 id="user-greeting" class="text-lg mb-5"></h3>
+      <form id="temperature-converter-form">
+        <div class="flex flex-col mb-4 gap-2">
+          <label for="celcius-input">Celcius to Fahrenheit</label>
+          <input
+            id="celcius-input"
+            name="celcius-input"
+            type="number"
+            placeholder="Temperature dalam skala celcius"
+            class="p-2 border-2 rounded"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Kalkulasi"
+          class="px-4 py-2 bg-slate-200 hover:bg-slate-400 hover:text-white active:scale-[1.1] transition rounded"
+        />
+      </form>
+      <p id="result" class="mt-4"></p>
+    </section>
+    <script>
+      // contoh internal JavaScript
+      console.log("Hello World");
+
+      // isi nama kalian
+      const nama = "";
+
+      // Penulisan String mengunakan operator + seperti concat()
+      let greeting = "Selamat Sore";
+      greeting += " ";
+
+      if (nama !== "") {
+        greeting += nama;
+      } else {
+        greeting += "Stranger";
+      }
+
+      console.log(greeting);
+
+      // Penulisan string mengunakan Template Literals
+      // let greetingTemplateLiterals = `Selamat Sore ${nama}`
+
+      // Cara memasukan text kedalam HTML menggunakan JavaScript
+      let userGreeting = document.getElementById("user-greeting");
+      userGreeting.innerHTML = greeting;
+    </script>
+    <!-- HTML tag untuk external JavaScript  -->
+    <script src="script.js"></script>
+  </body>
+</html>

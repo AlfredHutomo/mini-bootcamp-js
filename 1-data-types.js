@@ -1,8 +1,13 @@
 // var, let, const
 // number, string, boolean, null, undefined
 
-let age = 10;
-let fruit = "apple";
-let working = true;
+let personName = "Alfred"; // string, gabungan dari karakter
+let isWorking = true; // boolean, bisa juga false
+let currentYear = 2023; // number, angka
 
-console.log(age, fruit, working);
+const personNameConstant = "John";
+const pi = 3.14;
+
+console.log(personName);
+console.log(isWorking);
+console.log(currentYear);
