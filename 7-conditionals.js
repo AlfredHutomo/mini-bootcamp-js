@@ -14,16 +14,16 @@ if (umur < 18) {
   magang();
 }
 
-const statusOrang = "cerai";
+const statusOrang = "belajar";
 
 switch (statusOrang) {
-  case "single":
-    console.log("single");
+  case "belajar":
+    console.log("pelajar");
     break;
-  case "menikah":
-    console.log("menikah");
+  case "berkerja":
+    console.log("pekerja");
     break;
   default:
-    console.log("gatau nih");
+    console.log("belum terdaftar");
     break;
 }
